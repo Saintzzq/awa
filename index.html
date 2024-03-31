@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow-y: scroll; /* Adiciona uma barra de rolagem vertical */
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Cor de fundo escura */
+            animation: fadeIn 2s ease-in; /* Efeito de fade-in ao abrir o site */
+            scrollbar-width: thin; /* Largura da barra de rolagem */
+            scrollbar-color: rgb(0, 153, 255) transparent; /* Cor da barra de rolagem */
+            border-radius: 15px; /* Bordas arredondadas */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+        }
+
+        /* Estilo para a barra de rolagem */
+        body::-webkit-scrollbar {
+            width: 10px; /* Largura da barra de rolagem */
+            border-radius: 15px; /* Bordas arredondadas */
+        }
+
+        /* Estilo para o rastreador da barra de rolagem */
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(0, 153, 255); /* Cor do rastreador */
+            border-radius: 15px; /* Bordas arredondadas */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Inicia com opacidade 0 */
+            }
+            to {
+                opacity: 1; /* Termina com opacidade 1 */
+            }
+        }
+
+        
+
+        .fade-in-out {
+            text-align: center;
+            margin-bottom: 100px; /* Espaçamento inferior para permitir a rolagem */
+        }
+
+        .glowable-text {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .decoding-text {
+            color: #0099FF;
+            text-shadow: 0 0 15px #0099FF, 0 0 30px #0099FF, 0 0 45px #0099FF; /* Efeito de glow */
+            font-size: 24px;
+            animation: glow 2s ease-in-out infinite alternate; /* Animação do glow */
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 15px #0099FF, 0 0 30px #0099FF, 0 0 45px #0099FF; /* Inicia com o efeito de glow */
+            }
+            to {
+                text-shadow: 0 0 20px #0099FF, 0 0 40px #0099FF, 0 0 60px #0099FF; /* Termina com um efeito de glow mais intenso */
+            }
+        }
+
+        /* Círculos de fundo */
+        .circle {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(3, 61, 138); /* Cor do círculo com transparência */
+            border-radius: 50%; /* Forma circular */
+            filter: blur(50px); /* Desfoque */
+            animation: move 20s ease-in-out infinite alternate; /* Animação de movimento */
+            z-index: -1; /* Posiciona atrás do texto */
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(-50%, -50%) scale(1); /* Começa na posição original */
+            }
+            50% {
+                transform: translate(-55%, -55%) scale(1.1); /* Movimento para uma posição ligeiramente diferente */
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1); /* Retorna à posição original */
+            }
+        }
+
+        /* Adicione mais círculos conforme desejado */
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            animation-duration: 15s;
+            background-color: rgb(3, 61, 138); /* Cor vermelha com transparência */
+            top: 10%;
+            left: 80%;
+        }
+
+        .circle:nth-child(3) {
+            width: 250px;
+            height: 250px;
+            animation-duration: 25s;
+            background-color: rgb(3, 61, 138); /* Cor verde com transparência */
+            top: 70%;
+            left: 20%;
+        }
+
+        .circle:nth-child(4) {
+            width: 180px;
+            height: 180px;
+            animation-duration: 18s;
+            background-color: rgb(3, 61, 138); /* Cor azul com transparência */
+            top: 10%;
+            left: 20%;
+        }
+
+        /* Estilo para o texto no canto superior esquerdo */
+        .corner-text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #ffffff; /* Cor do texto */
+            font-size: 20px;
+            z-index: 1; /* Posiciona sobre os círculos */
+        }
+
+        /* Estilo para os contêineres lado a lado */
+   
+        /* Estilo para as caixas */
+
+
+    
+
+        h2 {
+            margin: 0; /* Remove margem padrão */
+        }
+
+        .content h2 {
+            color: #fff; /* Cor do texto */
+        }
+
+        /* Estilo do marcador */
+      
+        /* Desabilita a seleção de texto */
+        * {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Texto no canto superior esquerdo -->
+    <div class="corner-text">GearX </div>
+
+    <div class="container">
+        <div class="fade-in-out">
+            <h1>Introducing</h1>
+            <h2 class="glowable-text h1-seo" style="text-shadow: #ffffff 0px 0px 15px;">
+                Gear
+                <sub style="color: rgb(0, 153, 255); font-size: 100%; text-shadow: rgb(0, 153, 255) 0px 0px 15px; vertical-align: middle;">X</sub>
+            </h2>
+            <p class="decoding-text">Decoding</p>
+            <div class="container">
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Design</h2>
+      <p>GearX sets itself apart with its intuitive design, offering not only practicality but also a truly unmatched and distinctive user interface, making it a standout choice for users seeking both functionality and style.</p>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Secure?</h2>
+      <p>GearX incorporates a sophisticated bypass mechanism, ensuring undetectability in gaming environments, all while maintaining seamless performance and user experience.</p>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>How do I install?</h2>
+      <p>GearX can be installed on iOS devices via IPA, DEB, Terminal with jailbreak, or even without jailbreak, offering versatility and accessibility to all users.</p>
+      
+    </div>
+  </div>
+</div>
+  
+        </div>
+
+    <!-- Círculos de fundo -->
+    <div class="circle" style="top: 20%; left: 10%;"></div>
+    <div class="circle" style="top: 50%; left: 80%;"></div>
+    <div class="circle" style="top: 80%; left: 30%;"></div>
+    <div class="circle" style="top: 10%; left: 50%;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
