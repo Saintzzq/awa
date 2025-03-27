@@ -1,11 +1,8 @@
 {
-    "keys": ["KEY123", "KEY456"],
-    "banned_keys": {
-        "KEY123": true,
-        "KEY456": false
-    },
-    "expiration_dates": {
-        "KEY123": "2025-12-31",
-        "KEY456": "2023-12-31"
-    }
+  "keys": ["KEY1", "KEY2", "KEY3"],
+  "expiration_dates": {
+    "KEY1": "2023-12-31",
+    "KEY2": "2023-12-31",
+    "KEY3": "2023-12-31"
+  }
 }
