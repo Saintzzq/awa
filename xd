@@ -1,5 +1,6 @@
 {
   "keys": [
+    "LDKD-PDI7-PLKJ-0OIJ",
     "FEKD-09ID-KJN0-LKJN",
     "W324-DWE3-DFSD-2SDF",
     "Q8Z4-H9N2-T5MC-J1VW",
@@ -24,6 +25,7 @@
   ],
   "expiration_dates": {
 
+    "LDKD-PDI7-PLKJ-0OIJ": "2050-04-28",
     "FEKD-09ID-KJN0-LKJN" :"2050-04-28",
     "W324-DWE3-DFSD-2SDF": "2050-04-28",
     "Q8Z4-H9N2-T5MC-J1VW": "2050-04-28",
@@ -47,6 +49,7 @@
     "KN92-JQ83-ZPL7-X6VM": "2050-12-31"
   },
   "numbers": {
+    "LDKD-PDI7-PLKJ-0OIJ": "+55 21 98647-2146",
     "FEKD-09ID-KJN0-LKJN": "+55 31 9887041",
     "W324-DWE3-DFSD-2SDF": "+57 304 4409266",
     "Q8Z4-H9N2-T5MC-J1VW": "+55 18 99762-0685",
